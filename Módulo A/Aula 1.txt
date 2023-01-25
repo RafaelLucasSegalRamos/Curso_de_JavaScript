@@ -1,0 +1,7 @@
+Muitos sites hoje me dia utilizam o JavaScript, como por exemplo o Youtube, que se disabilitado o JavaScript ele não terá mais nenhuma funcionalidade.
+
+Utilizando a ferramente de Inspecionar no em qualquer site é possivel abrir a tela de console, que será possivel colocar um código JavaScript.
+
+Utilizando alert("x"); é possivel mandar uma caixa de notificação para o usuário do site.
+
+QuerrySelector('[Id# ou classe.]').style.[o que deseja mudar] = "[Valor possivel]"
