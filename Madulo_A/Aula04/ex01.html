@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1
+        {
+            color: gray;
+            text-decoration: line-through;
+            text-decoration-color: blueviolet;
+           /* text-align: center;*/
+            animation: infinite 6s animate;
+            position: relative;
+        }
+
+        @keyframes animate
+        {
+            0%
+            {
+                left: -300px;
+            }
+            75%
+            {
+                left: 300px;
+            }
+            100%
+            {
+                left: -300px;
+            }
+        }
+    </style>
+    <title>Lição um JS</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Da maldição, liberado fui...</p>
+        <!-- O alert server para apenas dar um aviso sem a o opção do usuário poder responder algo.
+
+        Enquato o confirm dá ao usuário uma opção de resposta sendo ok ou concelar. 
+        
+        O prompt tambem deixa o usuário ter uma resposta, sendo que está resposta será por escrito, ou seja, o usuário pode colocar qualquer mensagem.-->
+    <script> 
+        window.alert('Hello, World!');
+        window.confirm('Você sabia sobre está função?')
+        window.prompt('Qual é seu nome?')
+        
+    </script>
+</body>
+</html>
