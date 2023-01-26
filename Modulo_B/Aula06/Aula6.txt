@@ -1,0 +1,19 @@
+Utilizando o atributo n.length é possivel determinar o número de caracteres essa string possui.
+Como por exemplo: O JavaScript possui 10 caracteres
+
+Utilizando a função n.toUpperCase é possivel ter a String, mas com todos seus caracteres em maiusculas.
+
+Utilizando a função n.toLowerCase é possivel ter a String, mas com todos seus caracteres em Minusculas.
+
+
+Tambem é possivel Formatar com variaveis do tipo Number.
+Por exemplo caso eu queira forçar o aparecimento de mais,ou menos, casas decimais em números, basta eu utilizar o n.toFixed(n1)[Sendo o n1 o número de casas decimais]
+
+Utilizando o n.replace("n1", "n2")[Sendo n1 o que será substituido e n2 o que será inserido no lugar] é possivel trocar o que estiver escrito dentro da variavel.
+
+n1.toLocaleString('pt-br',{style: "currency", currency: "BRL"})
+'R$ 1.546,90'
+
+Este é um exemplo de um string localizada para o Brasil, e que seu estilo de formatação é de forma monetária e o tipo de organização monetária será do Real Brasileiro.
+
+Sendo BRL (Real Brasileiro), USD(Dolar Americano) e EUR(Euro). Há diversos outros que não estão escritos aqui. 

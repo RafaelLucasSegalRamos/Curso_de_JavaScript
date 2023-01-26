@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guandando dados</title>
+    <style>
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1
+        {
+            color: gray;
+            text-decoration: line-through;
+            text-decoration-color: blueviolet;
+           /* text-align: center;*/
+            animation: infinite 6s animate;
+            position: relative;
+        }
+
+        @keyframes animate
+        {
+            0%
+            {
+                left: -300px;
+            }
+            75%
+            {
+                left: 300px;
+            }
+            100%
+            {
+                left: -300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Da maldição, liberado fui...</p>
+        
+    <script> 
+        n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma dos valores é ${s}`)
+        
+        /*Para transforma uma variavel de string para número é fácil, mas terá que se atentaar caso o valor se tornará inteiro ou fracionado. */
+        /*
+        Number.parseInt(n) serve para transformar o valor dentro da variavel num valor inteiro.
+        Nuber.parseFloat(n) serve para transforma o valor dentro da variavel num valor racional, ou seja, valor com virgula.
+
+        Ou podemos utilizar o Number(n) que irá automaticamente detectar se é inteiro, ou fracionado e o transformará.
+
+        Tambem é possivel tranformar a variavel em String utilizando por exemplo:
+        String(n)[Algo parceido com o Number(n)]
+        n.toString()[Onde apenas se inverte a ordem em que é escrito]
+          
+        */
+        
+    </script>
+</body>
+</html>
