@@ -1,0 +1,16 @@
+No JavaScript os principais tipos primitivos de variaveis é:
+
+String(Usado para valores como nomes, profissão, ou simplismente um texto.);
+
+Number(que, usando Python como base, seria tanto um valor integer quanto um valor float, ou seja, pode ser um valor inteiro, negativo ou fracionado, sendo assim parte dos números REAIS[R]);
+
+E valores do Tipo Boolean(Que envolve os valores TRUE ou FALSE[Verdadeiro e Falso, respectivamente]).
+
+Tambem existem outros tipos primitivos, como por exemplo: Infinity e NaN(Not a Number)[Ambos são extenções do Number], null, undefined, Object, Array(uma extenção do Object) e Function(No JavaScript é considerado um tipo primitivo)
+
+Para se criar uma variavel basta fazer: [var nome da variavel = o que a variavel recebe](Sem os colchetes)
+
+Utilizando o comando: typeof nome da variavel; é possivel descobrir o tipo da variavel. Por exemplo:
+var n = 200
+typeof n
+"number"
