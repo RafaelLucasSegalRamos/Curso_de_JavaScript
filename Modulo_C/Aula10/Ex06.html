@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body
+        {
+            background: #222;
+            color: white;
+        }
+        div#area
+        {
+            line-height: 250px;
+            text-align: center;
+            background: rgb(63, 7, 116);
+            width: 250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Há diversos tipos de eventos que possam ser chamados entre eles tem alguns mais utilizados, como:
+    Mouseenter: quando o mouse fica por cima do local interagivel
+    MouseMove:  quando o mouse se move no local interagivel
+    MouseDown: quando se clica e segura no local interagivel
+    Click: quando se dá um click rápido no local interagivel
+    MouseOut: quanto se retira o mouse do local interagivel -->
+    <div id="area">
+        Me deixe sozinho...
+    </div>
+    <script>
+        var bloco = document.getElementById('area')
+        
+        bloco.addEventListener('mouseenter', mudacor)
+        bloco.addEventListener('mouseout', volta)
+        /*
+        Funções são agrupados de códigos que apenas se ativaram quando certa condição for atingida como por exemplo: Onmousedown, Onclick etc..
+        */
+
+        function mudacor(){
+            
+            bloco.style.color = "blue"
+            bloco.style.fontWeight = "900"
+            bloco.style.textDecoration = "underline"
+            bloco.innerText = "EU FALEI PRA ME DEIXAR SOZINHO"
+            bloco.style.fontSize = "0.75em"
+        }
+        function volta()
+        {
+            bloco.style.background = "rgb(63, 7, 116)"
+            bloco.style.color = "blueviolet"
+            bloco.style.fontWeight = "300"
+            bloco.style.textDecoration = "none"
+            bloco.innerText = "Obrigado, e até nunca mais..."
+            bloco.style.fontSize = "1em"
+        }
+    </script>
+</body>
+</html>

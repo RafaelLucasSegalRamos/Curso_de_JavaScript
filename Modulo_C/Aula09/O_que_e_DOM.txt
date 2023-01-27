@@ -1,0 +1,9 @@
+DOM é um acronimo para Document Object Model, que resumindo são objetos dentro de seu computador que poderam dar acesso aos componentes internos dentro do seu site.
+
+Por exemplo em uma arvore DOM, window seria a "raiz", onde se localiza tudo do javascript, e o window é a janela do navegador e o window dá acesso a três coisas: location (A URL do site, tanto quanto qual é a pagina atual e qual é a pagina anterior), document(onde existe a pagina HTML atual no qual o usuário se apresenta) e o history(guarda de qual pagina você veio, para qual você vai, assim permitindo melhor navegação pelo site).
+
+Mesmo podendo navegar entre o body e o head e escrever nos dois, ainda não é possivel buscar elementos dentro do body como h1, p, div e etc. E por isso tem um jeito especifico de pesquisa este tipo de coisa dentro do javascript, e os jeitos são:
+
+Por Marca, por ID, por Nome, por Classe e por Seletor.
+
+Por marca seria pegar uma tag especifica e modificar todas daquela tag, por exemplo utilizando esse comando em um h1, todos os h1 se comportariam da mesma forma.

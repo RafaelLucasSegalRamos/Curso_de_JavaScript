@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #222;
+            color: white;
+        }
+        .soma
+        {
+           /* color: white;*/
+            font-size: 2em;
+            font-weight: 900;
+        }
+        #soma
+        {
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+            background: rgb(66, 8, 119);
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando números</h1>
+    <p>Coloque um número em ambas as caixas</p>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+
+    <input type="button" value="Somar" onclick="somaa()">
+    <p id="somar"> O resultado estará aqui!</p>
+    <script>
+            
+        function somaa()
+        {
+
+            var final = document.getElementById('somar')
+
+            var i1 = document.getElementById('txtn1')
+
+            var i2 = document.getElementById('txtn2')
+
+            var v1 = Number.parseFloat(i1.value)
+
+            var v2 = Number.parseFloat(i2.value)
+
+            var s = v1 + v2
+            
+            final.innerHTML = `O resultado desta conta é ${s}`
+        }
+
+    </script>
+</body>
+</html>

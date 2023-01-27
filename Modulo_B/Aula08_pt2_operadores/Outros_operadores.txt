@@ -1,0 +1,26 @@
+Aqui será explicado o que são operadores relacionais, lógicos e ternários.
+
+Operadores relacionais, são aqueles que fazem uma relação entre dois números, palavras, variaveis entre outras. Por exemplo fazendo uma relação de maior e menor, como 2 < 4 , 5 > 3 [2 é menor que 4 e  5 é maior que 3, respectivamente], 4 >= 3, 2 <= 2 [4 é maior ou igual a 3, 2 é menor ou igual a 2, repectivamente],  4 == 4, 3 != 5 [4 é igual a 4, 3 é diferente de 5, respectivamente].
+
+E a partir deste tipo de relacionamento é possivel então valores do tipo boolean, ou seja, verdadeiro ou falso. Um exemplo.
+    3 > 2 = True
+    4 < 2 = False
+    5 >= 5 = True
+    6 <= 4 False
+    6 == 6 = True
+    7 != 7 = False
+
+    OBS: O sinal de igual (==) não consegue distinguir tipo, por exemplo um 5 do tipo number, pode ser considerado igual ao '5' do tipo String. Mas tambem é possivel tentar igualar por inteiro utilizado "===" (identico a) e tambem temos o contrario deste que é o "!==" inigualavel(nome inventado) . Exemplo:
+     
+    5 === `5` = False
+    5 === 5 = True   
+
+Para os operadores lógicos temos apenas três operadores sendo eles: !(Negação[Caso o valor for True se torna False, e vice-versa]), &&(Conjunção[Caso a conta de dois, ou mais, valores boolean todos tem que ser True para que a expressão seja verdadeira.]) e ||(Disjunção[Caso a conta de dois, ou mais, valores boolean todos tem que ser False para que a expressão seja Falsa.). Outro detalhe é que operadores lógicos funcionam sempre depois dos operadores racionais.
+
+Em operadores ternários existem apenas dois operadores sendo eles ? e : que sempre aparecem na mesma expressão. Neste tipo de operador são utilizados três valores, sendo eles o "teste"`(um teste lógico ) e dois valores boolean, como no exemplo:
+
+"teste"? True : False
+
+Nesta expressão quando terminar o teste lógico Caso for True ele irá seguir o que o True mostra, caso falso ele irá fazer o que o o False mostra.
+
+(n1+n2)/2 >= media? `Aprovado`:"Reprovado"

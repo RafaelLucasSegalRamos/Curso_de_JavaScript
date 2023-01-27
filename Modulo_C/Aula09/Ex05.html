@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+            color: white;
+            background-color: #222;
+        }
+    </style>
+    <title>Aula sobre DOM</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Minha primeira lição sobre DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div onclick="surpresa()" style="cursor: pointer;">
+        Clique em mim
+    </div>
+    <script>
+     /*   
+        Exemplos de functions. 
+        function mudacor(){
+            window.document.body.style.backgroundColor = "#07a"
+        }
+
+        function escreva()
+        {
+            window.document.write(`<h2>Olá Cambada</h2>`)
+        }
+        */
+        /*
+            Exemplos de busca de itens dentro do body.
+
+            p1 = window.document.getElementsByTagName('p')[0]
+
+            var title = window.document.getElementById('titulo')
+            
+            var corpo = window.document.body
+            
+            var nome = window.document.getElementsByName('nome')
+            
+            var classe = window.document.getElementsByClassName('Classe')
+
+            var QuerrySele = window.document.querySelector('h1#titulo')
+            
+               var QSall = window.document.querySelectorAll('')
+        */
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        var title = window.document.getElementById('titulo')
+        
+        var corpo = window.document.body
+        
+        var QuerrySele = window.document.querySelector('h1#titulo')
+        
+        var QSall = window.document.querySelectorAll('h1#titulo')
+        
+
+       
+        window.document.write("<br>"+p1.innerHTML)
+        window.document.write("<h2>"+ title.innerHTML+"</h2>")
+        
+
+        function surpresa(){
+            title.style.color = "blueviolet"
+            p1.style.color = "lightgreen"
+            corpo.style.background = "darkslategray"
+            window.alert(title.innerText)
+        }
+
+        /*
+            Exemplo de mudaça de estilos com JS:
+
+            p1.style.color = "lightgreen"
+            
+            title.style.color = "blueviolet"
+        */
+
+        /*
+            Exemplos do que se pode fazer com DOM.
+          
+            window.document.write(window.document.charset)
+          
+            window.document.write(window.navigator.appName)
+          
+            window.document.write(window.document.URL)
+        */
+    </script>
+</body>
+</html>

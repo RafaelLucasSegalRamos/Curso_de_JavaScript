@@ -1,0 +1,44 @@
+No JavaScript existem diversos tipos de operadores, mas entre eles os principais são: Aritiméticos, Atribução, Relacionais, Lógicos e Ternários.
+
+Essa parte 1 será focada em operadores Aritiméticos e de Atribução.
+
+Os operadores Aritiméticos envolvem operadores da matemática como por exemplo: +(Adição), -(Subtração),     *(Multiplicação), /(Divisão Real), %(Resto da divisão de número inteiro) e **(Exponeciação). E são considerados operadores binários por precisarem de dois números para que o calculo seja realizado.
+
+Exemplo:
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1
+5 ** 2 = 25
+
+Operadores de Atribução já foram explorados antes usado em expressões como: var a = b + c, entre outros. sendo pricipamente utilizado para guardar informações em variaveis para então mostrar na tela ou utilizar em outro lugar. Exemplo:
+
+= No JavaScript e muitas outras linguagens de progamação significa "Receber" e não "Igual a" e então é utilizado para então declarar qual será o valor da variavel. Exemplo:
+
+var a = 3 + 4
+var b = a * 2
+var c = b - 4
+var d = c ** 2 * (c-3) + (c*0.50)
+var e = d%33
+e == 12
+
+Tambem existe as atribuições simples e autoatribuição, que são feitas do mesmo jeito que as anteriores, mas a unica diferença é que quando atribuidas geralmente não possui nenhum tipo de operador aritimético antes do sinal de igual, ou pode ser quando uma variavel se envolve na atribução da mesma. Exemplo:
+
+n = 4
+n = n * 3
+n = 12
+
+Ou podemos simplificar desta forma: 
+
+n = 4
+n *= 3
+n += 5
+n -= 2
+n **= 3
+n %= 9
+
+E caso queiramos simplificar mais ainda operações como x+=1 ou x-=1, faremos como no exemplo:
+
+x++
+x--
