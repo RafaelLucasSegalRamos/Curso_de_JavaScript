@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Digite a quantos quilometros de velocidade seu carro está</p>
+    <input type="number" name="txtvel" id="txtvel" value="0">Km/H
+    <br>
+    <br>
+    <input type="button" value="Calcular" onclick="calcula()">
+    <p id="resp">Resposta aparecerá aqui</p>
+    <script>
+        function calcula()
+        {
+            var velo = document.getElementById('txtvel')
+            var res = document.getElementById('resp')
+
+            var vel = Number.parseFloat(velo.value)
+            
+            res.innerHTML = `Sua velocidade atual é <strong>${vel}Km/H</strong>`
+
+            if (vel > 60)
+            {
+                res.innerHTML += "<p>Você foi multado! Pois utrapassou o limite de velocidade!</p>"
+            }
+            
+            res.innerHTML += `<p>Sempre dirija com cinto de segurança!!</p>`
+            
+        }
+    </script>
+</body>
+</html>

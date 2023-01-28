@@ -1,0 +1,10 @@
+Estruturas de condições existem em quase todas as linguagens de progamação, pois são muito utei para quando queremos que certos comandos não acontecem mesmo estando no meio do código, ou só que aconteçam mais tarde, então nos utilizamos o If.
+
+Exemplo: If (condição)
+            {
+                (o que acontecerá se a condição se cumprir)
+            }
+            else
+            {
+                (o que acontecerá caso a condição não se cumpra.)
+            }
