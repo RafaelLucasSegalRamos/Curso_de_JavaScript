@@ -1,0 +1,1 @@
+O swich é bem parecido com o if, tendo sua condição, uma expressão e os seus "cases" com apenas valores fixos e um default que funcionaria como o "else". Em todas as clausulas do swich é obrigatório terminar com um break

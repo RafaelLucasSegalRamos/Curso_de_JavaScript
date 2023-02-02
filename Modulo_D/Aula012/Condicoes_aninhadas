@@ -1,0 +1,1 @@
+Condições aninhadas tambem envolvem o "if" mas se uma forma diferente, pois a segunda condição está localizada dentro do "else" da primeira condição, e seguindo este conceito é possivel criar quantas condições forem necessárias dentro do programa.

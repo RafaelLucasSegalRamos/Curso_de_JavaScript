@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: #222;
+            width: 100vw;
+            height: 100vh;
+        }
+        .container
+        {
+            background-color: blanchedalmond;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            margin: auto;
+        }
+        h1
+        {
+            text-align: center;
+            color: white;
+        }
+        p
+        {
+            position: relative;
+            /*margin-top: 20px;
+            margin-left: 10px;*/
+            padding: 20px 10px;
+        }
+        input[type="button"]
+        {
+            padding: 10px;
+            margin-left: 30px;
+        }
+        div#cirv2
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: blueviolet;
+            margin: auto;
+        }
+        p#Resultado
+        {
+            text-align: center;
+        }
+        footer
+        {
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div class="container">
+        <p>Ano de Nascimento:<input type="Number" name="idade" id="idade"></p>
+
+        <p>Sexo: Feminino: <input type="radio" name="radio1" id="radio1">  Masculino:<input type="radio" name="radio1" id="radio2"></p> 
+        
+        <input type="button" value="Verificar" onclick="verifica()">
+        
+        <p id="Resultado"></p>
+        
+        <div id="cirv2"></div>
+
+    </div>
+        <footer>&copy;Rafael Lucas Segal Ramos</footer>
+        <script src=""></script>
+        <script>
+            /*Caso queira pegar o arquivo escript de outro arquivo basta escrever <script src=""><=/script>*/
+            
+            function verifica()
+            {
+                var anon = document.getElementById("idade")
+
+
+                var circulo = document.getElementById("cirv2")
+
+                var agora = new Date()
+
+                var result = document.getElementById('Resultado')
+                
+                var anoat = agora.getFullYear()
+                
+                var ano = Number(anon.value)
+
+                if (ano <= anoat && ano == Number){
+                   var idade = Number(anoat - ano)
+                
+                result.innerHTML = `Detectamos um * de ${idade} anos` 
+                }
+                else
+                {
+                    alert("[ERRO] Verifique os dados e tente novamente!!")
+                }
+                 
+            }
+            
+        </script>
+</body>
+</html>
