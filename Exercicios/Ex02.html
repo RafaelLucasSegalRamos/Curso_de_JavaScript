@@ -62,11 +62,13 @@
     <div class="container">
         <p>Ano de Nascimento:<input type="Number" name="idade" id="idade"></p>
 
-        <p>Sexo: Feminino: <input type="radio" name="radio1" id="radio1">  Masculino:<input type="radio" name="radio1" id="radio2"></p> 
+        <p>Sexo: <label for="radio1">Feminino:</label> <input type="radio" name="resc" id="radio1" checked> <label for="radio2">Masculino:</label><input type="radio" name="resc" id="radio2"></p> 
         
         <input type="button" value="Verificar" onclick="verifica()">
         
-        <p id="Resultado"></p>
+        <p id="Resultado">
+            Preencha os Dados acima para ver os resultados
+        </p>
         
         <div id="cirv2"></div>
 
@@ -91,15 +93,102 @@
                 
                 var ano = Number(anon.value)
 
-                if (ano <= anoat && ano == Number){
-                   var idade = Number(anoat - ano)
+                var sexo = document.getElementsByName('resc')
+
+                if (ano <= anoat){
+                    var idade = Number(anoat - ano)
                 
-                result.innerHTML = `Detectamos um * de ${idade} anos` 
+                    /*result.innerHTML = `Detectamos um * de ${idade} anos` */
+
+                    if (sexo[0].checked)
+                    {
+                        var genero = "F"
+                    }
+                    else 
+                    {
+                        var genero = "M"
+                    }
+
+                    if (genero == 'F' && idade <= 12)
+                    {
+                        result.innerHTML = `Detectamos uma mulher de ${idade} anos`
+
+                        circulo.style.background = 'lightcoral'
+                    }
+                    else if (genero == 'F' && idade <= 20)
+                    {
+                        result.innerHTML = `Detectamos uma mulher de ${idade} anos`
+
+                        circulo.style.background = 'crimson'
+                    }
+
+                    else if (genero == 'F' && idade <= 50)
+                    {
+                        result.innerHTML = `Detectamos uma mulher de ${idade} anos`
+
+                        circulo.style.background = 'red'
+                    }
+
+                    else if (genero == 'F' && idade >= 51)
+                    {
+                        result.innerHTML = `Detectamos uma mulher de ${idade} anos`
+
+                        circulo.style.background = 'darkred'
+                    }
+
+                    else if (genero == 'M' && idade <= 12)
+                    {
+                        result.innerHTML = `Detectamos um homem de ${idade} anos`
+
+                        circulo.style.background = 'lightblue'
+                    }
+                    else if (genero == 'M' && idade <= 20)
+                    {
+                        result.innerHTML = `Detectamos um homem de ${idade} anos`
+
+                        circulo.style.background = 'cyan'
+                    }
+
+                    else if (genero == 'M' && idade <= 50)
+                    {
+                        result.innerHTML = `Detectamos um homem de ${idade} anos`
+
+                        circulo.style.background = 'blue'
+                    }
+                    else if (genero == 'M' && idade >= 51)
+                    {
+                        result.innerHTML = `Detectamos um homem de ${idade} anos`
+
+                        circulo.style.background = 'darkblue'
+                    }
+                    /*
+                    Isto é algo que cria um elemneto no HTML a partir do JavaScript
+
+                    var img = document.createElement('img')
+                    img.setAttribute('id', 'foto')
+                    
+                    e podemos mudar a foto assim: 
+                    img.setAttribute('scr', 'Nome da foto')
+                    
+                    e utilizando o 'nome da variavel na qual a imagem foi colocada'.src é possivel mudar a foto sem ter que criar o img no propio javascript*/
                 }
                 else
                 {
                     alert("[ERRO] Verifique os dados e tente novamente!!")
                 }
+
+            /*  Homem: do mais novo ao mais velho
+                color: lightblue;
+                color: cyan;
+                color: blue;
+                color: darkblue;
+
+                Mulher: do mais novo ao mais velho
+                color: lightcoral;
+                color: crimson;
+                color: red;
+                color: darkred;
+            */
                  
             }
             
