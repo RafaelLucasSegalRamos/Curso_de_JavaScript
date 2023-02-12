@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Brincadeira rápida</h1>
+   
+    
+    <p>Coloque um valor para ser contado até zero: <input type="number" id="num"></p>
+    <input type="button" value="Clique em mim!!"onclick="clique()"> 
+    <div id="contagem">
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="contagem2">
+
+    </div>
+    <script>
+        
+
+        function clique()
+        {
+            var i = document.getElementById('num')
+
+            var val = Number.parseFloat(i.value)
+
+            var cont = document.getElementById('contagem')
+
+            var cont2 = document.getElementById('contagem2')
+
+            
+            if (cont.innerHTML =! ""){
+                cont.innerHTML = ""
+            }
+                
+
+            if (cont2.innerHTML =! ""){
+                cont2.innerHTML = ""
+            }
+            
+            /*
+            Estrutura de repetição com teste lógico no começo
+            */
+
+            
+
+            /*Estrutura de repetição com teste lógico no final*/
+
+            do 
+            {
+                cont2.innerHTML += `${val}, `
+                val--
+            } while (val > 0)
+
+            cont2.innerHTML += `${val}.`
+            
+            while (val > 0)
+            {
+                cont.innerHTML += `${val}, `
+                val--
+            }
+            cont.innerHTML += `${val}.`
+
+            var val = Number.parseFloat(i.value)
+        }
+
+
+    </script>
+</body>
+</html>
