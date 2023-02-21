@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #222;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1
+{
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+main
+{
+    
+    background-color: #444;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+main div
+{
+   
+    background: white;
+    margin: 30px 0;
+    border-radius: 20px;
+    width: 90%;
+    position: relative;
+    /* height: 40%;
+    */ left: 5%;
+}
+main div *
+{
+    padding: 10px;
+}
+
+main div input[type="button"]
+{
+    position: relative;
+    left: 196px;
+    margin: 20px 0px;
+}
+
+footer p
+{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: lightseagreen;
+}
