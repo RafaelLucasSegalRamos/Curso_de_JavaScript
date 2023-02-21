@@ -48,6 +48,12 @@ main div *
     padding: 10px;
 }
 
+main div p
+{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
 main div input[type="button"]
 {
     position: relative;

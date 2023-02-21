@@ -25,22 +25,24 @@ header h1
 
 main
 {
-    height: 500px;
+    min-height: 500px;
     background-color: #444;
     width: 80%;
     margin: auto;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 main div
 {
-    height: 40%;
+    
     background: white;
-    margin: 30px 0;
+    margin: 30px 30px;
     border-radius: 20px;
-    width: 90%;
     position: relative;
-    left: 5%;
+    /* height: 40%; */
+    width: 90%;
 }
 
 footer p
@@ -50,6 +52,32 @@ footer p
     margin: 30px;
     font-size: 1.5em;
     font-style: italic;
+}
+
+main div:nth-child(1)
+{
+    height: 230px;
+}
+
+main div:nth-child(2)
+{
+    height: 400px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+main div:nth-child(1) *
+{
+    padding: 10px;
+    width: 80%;
+    
+}
+
+main div:nth-child(1) input
+{
+    position: relative;
+    left: 20px;
+    margin: 10px 0;
 }
 
 footer a

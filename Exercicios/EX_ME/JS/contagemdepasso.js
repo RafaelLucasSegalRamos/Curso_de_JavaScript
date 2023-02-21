@@ -19,7 +19,7 @@
            {
                res.innerText += `${comeco} => `
            }*/
-           while(comeco > final)
+           while(comeco >= final)
            {
                res.innerText += `${comeco} => `
                comeco -= passo
@@ -32,7 +32,7 @@
            {
                res.innerText += `${comeco} => `
            }*/
-           while(comeco > final)
+           while(comeco >= final)
            {
                res.innerText += `${comeco} => `
                comeco += passo
@@ -46,7 +46,7 @@
            {
                res.innerText += `${comeco} => `
            }*/
-           while(comeco < final)
+           while(comeco <= final)
            {
                res.innerText += `${comeco} => `
                comeco += passo
@@ -61,7 +61,7 @@
            {
                res.innerText += `${comeco} => `
            }*/
-           while(comeco < final)
+           while(comeco <= final)
            {
                res.innerText += `${comeco} => `
                comeco -= passo
