@@ -15,7 +15,12 @@ function conta()
 
     for (n = 0; n <= 10; n++)
     {
-        res.innerHTML += `<p>${tabuada} * ${n} = ${tabuada*n}</p>`
+        
+        let item = document.createElement('option')
+        //Create element serve para criar uma nova tag HTML a partir do JavaScript
+        item.text = `${tabuada} * ${n} = ${tabuada*n}`
+        res.appendChild(item)
+        
     }
 }
-}
+} 

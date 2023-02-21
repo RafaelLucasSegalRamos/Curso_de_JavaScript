@@ -13,66 +13,62 @@
        var passo = Number.parseFloat(pss.value)
    
        
-       if (final < comeco && passo > 0)
+       if (cmc.value.length == 0 || fim.value.length == 0 || pss.value.length == 0){
+        alert(`Algo deu errado!!`)
+       }
+       else{
+        if (final < comeco && passo > 0)
        {
-           /*for (comeco = Number.parseInt(cmc.value); comeco > final; comeco - passo)
-           {
-               res.innerText += `${comeco} => `
-           }*/
+           // Contagem regressiva com passo positivo
            while(comeco >= final)
            {
-               res.innerText += `${comeco} => `
+               res.innerText += `${comeco} \u{1F449} `
                comeco -= passo
            }
-           res.innerText += "Chegou!!"
+           res.innerText += "Chegou!! \u{1F6A9}"
        }
        else if (final < comeco && passo < 0)
        {
-           /*for (comeco = Number.parseInt(cmc.value); comeco > final; comeco + passo)
-           {
-               res.innerText += `${comeco} => `
-           }*/
+           //Contagem regressiva com passo negativo
            while(comeco >= final)
            {
-               res.innerText += `${comeco} => `
+               res.innerText += `${comeco} \u{1F449} `
                comeco += passo
            }
-           res.innerText += "Chegou!!"
+           res.innerText += "Chegou!! \u{1F6A9}"
            
        }
        else if (final > comeco && passo > 0)
        {
-           /*for (comeco = Number.parseInt(cmc.value); comeco < final; comeco + passo)
-           {
-               res.innerText += `${comeco} => `
-           }*/
+           // contagem crescente com passo positivo
            while(comeco <= final)
            {
-               res.innerText += `${comeco} => `
+               res.innerText += `${comeco} \u{1F449} `
                comeco += passo
            }
-           res.innerText += "Chegou!!"
+           res.innerText += "Chegou!! \u{1F6A9}"
+           /* Utilizando o \u{} é pussivel substituir o U+, mas esta versão funciona apaenas em javascript*/
    
            
        }
        else if (final > comeco && passo < 0)
        {
-           /*for (comeco = Number.parseInt(cmc.value); comeco < final; comeco - passo)
-           {
-               res.innerText += `${comeco} => `
-           }*/
+           //Contagem crescente com passo negativo
            while(comeco <= final)
            {
-               res.innerText += `${comeco} => `
+               res.innerText += `${comeco} \u{1F449} `
                comeco -= passo
            }
-           res.innerText += "Chegou!!"
+           res.innerText += "Chegou!! \u{1F6A9}"
            
        }
+    
        else
        {
            alert(`Algo deu errado!!`)
        }
+       }
+       
        
    }
    
