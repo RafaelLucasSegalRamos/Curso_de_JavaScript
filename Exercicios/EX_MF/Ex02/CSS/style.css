@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #222;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1
+{
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+main
+{
+    height: 500px;
+    background-color: #444;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+main div
+{
+    height: 40%;
+    background: white;
+    margin: 30px 0;
+    border-radius: 20px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+footer p
+{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: lightseagreen;
+}
