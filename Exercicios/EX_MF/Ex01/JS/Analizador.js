@@ -45,7 +45,13 @@ function valida(valor)
 
 function finalizar()
 {
-    final.innerHTML = ""
+    if (list.length == 0)
+    {
+        alert('Adicione valores a lista antes de finalizar!!')
+    }
+    else
+    {
+        final.innerHTML = ""
     final.innerHTML += `<p>Ao todo, temos ${list.length} número(os)</p>` 
 
     let mn = maior(list)
@@ -59,6 +65,8 @@ function finalizar()
     final.innerHTML += `<p>Somando todos os valores teremos ${soma}</p>`
 
     final.innerHTML += `<p>E a média aritimética desses valores é ${soma/c}</p>`
+    }
+    
 }
 
 function maior(vetor)
